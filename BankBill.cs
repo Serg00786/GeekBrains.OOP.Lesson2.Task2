@@ -10,6 +10,7 @@ namespace GeekBrains.OOP.Lesson2.Task1
     {
         private long BillNumber;
         private double Balance;
+        private static int LastBillNumber;
         internal enum BillTypes{
              CompanyBill,
              PrivateBill
@@ -31,9 +32,9 @@ namespace GeekBrains.OOP.Lesson2.Task1
             return TheBillTypes;
         }
 
-        internal long SetBillNumber(long value)
+        internal long SetBillNumber()
         {
-            return BillNumber = value;
+            return BillNumber = LastBillNumber+1;
         }
 
         internal double SetBalance(double value)

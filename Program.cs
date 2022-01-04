@@ -12,7 +12,7 @@ namespace GeekBrains.OOP.Lesson2.Task1
         {
             BankBill bankBill = new BankBill();
             Console.WriteLine(bankBill.SetBalance(1111));
-            Console.WriteLine(bankBill.SetBillNumber(2222));
+            Console.WriteLine(bankBill.SetBillNumber());
             Console.WriteLine(bankBill.SetBillTypes(BankBill.BillTypes.CompanyBill));
             Console.ReadKey();
         }
